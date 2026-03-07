@@ -1,0 +1,53 @@
+export const lightTheme = {
+  mode: 'light' as const,
+  colors: {
+    background: '#F5F5F5',
+    surface: '#FFFFFF',
+    primary: '#2196F3',
+    primaryDark: '#1565C0',
+    secondary: '#FF9800',
+    accent: '#4CAF50',
+    danger: '#F44336',
+    text: '#212121',
+    textSecondary: '#757575',
+    textOnPrimary: '#FFFFFF',
+    border: '#E0E0E0',
+    cardShadow: '#00000020',
+    scoreBackground: '#E3F2FD',
+    scoreText: '#1565C0',
+    completedBg: '#E8F5E9',
+    completedBorder: '#4CAF50',
+    tabBar: '#FFFFFF',
+    tabBarBorder: '#E0E0E0',
+    tabIconActive: '#2196F3',
+    tabIconInactive: '#9E9E9E',
+  },
+};
+
+export const darkTheme = {
+  mode: 'dark' as const,
+  colors: {
+    background: '#121212',
+    surface: '#1E1E1E',
+    primary: '#64B5F6',
+    primaryDark: '#42A5F5',
+    secondary: '#FFB74D',
+    accent: '#81C784',
+    danger: '#EF9A9A',
+    text: '#EEEEEE',
+    textSecondary: '#BDBDBD',
+    textOnPrimary: '#FFFFFF',
+    border: '#333333',
+    cardShadow: '#00000060',
+    scoreBackground: '#1A2A3A',
+    scoreText: '#64B5F6',
+    completedBg: '#1A2E1A',
+    completedBorder: '#81C784',
+    tabBar: '#1E1E1E',
+    tabBarBorder: '#333333',
+    tabIconActive: '#64B5F6',
+    tabIconInactive: '#757575',
+  },
+};
+
+export type AppTheme = typeof lightTheme;
