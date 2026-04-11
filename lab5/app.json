@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Lab5 Shop",
+    "slug": "lab5-shop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "lab5shop",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.lab5.shop" },
+    "android": { "package": "com.lab5.shop" },
+    "plugins": ["expo-router"]
+  }
+}

@@ -1,0 +1,21 @@
+
+import { Redirect, Stack } from 'expo-router';
+import { useAuth } from '../../context/AuthContext';
+
+export default function AppLayout() {
+  const { isAuthenticated } = useAuth();
+
+  if (!isAuthenticated) {
+    return <Redirect href="/login" />;
+  }
+
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen
+        name="details/[id]"
+        options={{ animation: 'slide_from_right' }}
+      />
+    </Stack>
+  );
+}
