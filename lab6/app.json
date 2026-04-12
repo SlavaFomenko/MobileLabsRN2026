@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Lab6",
+    "slug": "lab6",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "lab6",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lab6.app"
+    },
+    "android": {
+      "package": "com.lab6.app"
+    },
+    "plugins": ["expo-router"]
+  }
+}
